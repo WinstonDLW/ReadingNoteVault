@@ -3,38 +3,32 @@
 Use this guide after reading the requested scope and before writing
 notes.
 
-Questions discover the user's preference for transforming source
-material into useful notes.
+Questions discover the user's preference where several useful
+transformations remain after applying the note rules and reading the
+source.
 
-## First Infer The Logic And Inventory
+## Infer The Logic And Inventory
 
-Briefly show only enough context for the treatment plan:
+Before preparing questions, identify:
 
-- what the source is trying to explain
-- the central and supporting concepts
-- the useful knowledge contribution
+- the source's knowledge contribution
+- the reasoning flow that makes the contribution understandable
+- central and supporting knowledge
+- examples and the roles they play in the explanation
+- diagrams and other teaching artifacts
+- background or context that directly supports the knowledge
+- possible boundaries between concept notes
 
-Keep this section compact. Present each idea once, choosing either a
-brief logic statement or inventory item.
+Keep the result compact. Present each idea once and classify it by its
+role in the source.
 
-Then create a compact inventory only when it helps explain the treatment
-plan.
-
-The inventory should include meaningful source content such as:
+Classify meaningful content using these roles:
 
 - central knowledge
 - supporting knowledge
-- examples
-- diagrams
-- code samples
-- comparisons
-- definitions
-- rules or principles
-- failure modes
-- design responses
-- edge cases
+- example
+- artifact
 - background or context
-- practical advice
 
 Present the logic map and inventory as input to note decisions.
 
@@ -53,15 +47,56 @@ Separate the treatment plan into two groups:
 - settled by rules
 - needs user preference
 
-Use rule-settled decisions when the related rule clearly decides the
-treatment. State these decisions briefly and continue.
+## Present The Checkpoint
 
-Use preference decisions when several reasonable treatments remain or
-when the user's taste affects usefulness.
+Use this compact structure for the checkpoint.
 
-Number each preference question so the user can reply by number.
+### Inferred Logic
 
-Treatments may include:
+Show the source's useful reasoning in a short sequence or compact
+explanation.
+
+### Content Inventory
+
+Show the meaningful content and its role compactly so the user can
+understand the proposed treatment.
+
+### Settled Treatment
+
+State the relevant decisions supplied by the note system and the
+source:
+
+- produce compact, reviewable notes
+- derive the note structure from the source's knowledge and reasoning
+- integrate examples into the concepts they explain
+- introduce, caption, and explain every included image
+- give prose, tables, diagrams, and other formats distinct explanatory
+  roles
+- update the matching source note and processing log
+
+Include only the settled decisions relevant to the current scope.
+
+### Preference Decisions
+
+Ask focused questions when several useful treatments remain. Give each
+option enough context for the user to understand its effect on the
+notes.
+
+Preference decisions commonly concern whether supporting knowledge
+should:
+
+- become an individual concept note
+- merge into an existing concept note
+- remain inside the central concept note
+- appear only in the source note
+
+They may also concern whether source-specific content should be
+preserved, simplified, generalized, replaced, compressed, or left out.
+
+Number each preference question so the user can reply by number. Group
+closely related decisions when that makes the choice clearer.
+
+Possible treatments include:
 
 - create an individual concept note
 - merge into an existing concept note
@@ -79,36 +114,12 @@ writing notes. When the user has already given enough preferences in the
 current conversation or explicitly asks for best judgment, state the
 settled choices and continue.
 
-At the checkpoint, use the treatment plan as a negotiation surface.
-Show rule-settled decisions as settled choices.
+Use the treatment plan as a negotiation surface. State rule-settled
+decisions as settled choices, and ask specific questions about the
+remaining inventory items and their transformation into the note
+system.
 
-Ask about all meaningful preference decisions. Group related decisions
-into one question when that keeps the checkpoint readable.
-
-Useful questions ask:
-
-- which knowledge deserves an individual concept note
-- which content should remain inside another concept note as supporting
-  knowledge
-- which content belongs only in the source note
-- which content should be preserved, simplified, generalized, replaced,
-  compressed, or left out
-- how original source artifacts should carry the explanation when the
-  user asks to preserve them
-- whether source wording should become general knowledge
-- which format would express the knowledge best: prose, bullets, table,
-  diagram, flowchart, numbered chain, or another shape
-
-When a rule settles the choice, state the decision. When judgment settles
-the choice, ask the user to confirm or adjust it.
-
-Ask specific questions about inventory items and their transformation
-into the note system.
-
-Make the rule source visible in the treatment plan when useful, so the
-user can see why a decision is settled.
-
-When several unresolved preference decisions affect note quality, ask
-about each one or group related decisions clearly.
-
-Keep questions focused on note quality and transformation decisions.
+When several unresolved decisions affect note quality, ask about each
+one or group related decisions clearly. Keep the questions focused on
+knowledge boundaries and transformations that materially affect future
+review.

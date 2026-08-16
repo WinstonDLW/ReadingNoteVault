@@ -26,9 +26,16 @@ needs them.
 
 2. Read the requested scope.
 
-   Identify the source logic, knowledge contribution, meaningful source
-   content, possible note formats, and decisions that need the user's
-   preference.
+   Identify:
+
+   - the source's knowledge contribution
+   - the reasoning flow that makes that knowledge understandable
+   - central and supporting concepts
+   - examples and the roles they play in the explanation
+   - diagrams and other teaching artifacts
+   - background or context that directly supports the knowledge
+   - possible note boundaries and treatments that need the user's
+     preference
 
 3. Prepare questions.
 
@@ -47,6 +54,10 @@ needs them.
    Use `update-rules.md` when existing notes may be affected.
    Use `note-rules.md` for source and concept notes.
    Use `linking-rules.md` before adding Obsidian links.
+
+   Before saving, verify that the notes preserve the useful knowledge
+   and reasoning identified in step 2, honor the agreed treatments, and
+   express the result compactly without redundant representations.
 
 6. Record the work.
 
