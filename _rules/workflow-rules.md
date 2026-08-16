@@ -47,10 +47,7 @@ needs them.
 
 ## System Shape
 
-Source notes summarize a source's knowledge contribution and link to
-concept notes.
+Source notes summarize a source's knowledge contribution, link to
+concept notes, and act as source navigation.
 
 Concept notes teach reusable knowledge.
-
-The vault has no separate index files; source notes act as source
-navigation.

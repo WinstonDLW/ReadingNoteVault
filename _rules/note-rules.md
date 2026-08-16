@@ -3,8 +3,7 @@
 Use these rules when creating or updating final notes.
 
 Good notes transport source knowledge into the vault. They should feel
-useful for review, not like rewritten chapters, invented essays, or
-filled templates.
+like reviewable knowledge shaped from the source.
 
 ## Locations
 
@@ -57,6 +56,10 @@ For a scope centered on an existing or newly created concept note, keep
 the source note brief: identify the concept and the source's
 contribution in one or two compact sentences.
 
+When one scope mainly introduces one concept, prefer one compact source
+entry. Mention the source's angle on the concept. Put mechanisms,
+examples, and detailed explanation in the concept note.
+
 Place concept explanation inside concept notes. Place examples inside
 concept notes when their purpose is to explain the concept.
 
@@ -71,15 +74,15 @@ where it was learned.
 
 It answers: what is this idea, how does it work, and when is it useful?
 
-Write the body in source-neutral language. Put source identity only in
+Write the body in source-neutral language. Keep source identity in
 source references.
 
-Open with the central distinction, rule, mechanism, or consequence
-rather than repeating the title.
+Open with the useful knowledge. Start with the central distinction,
+problem, mechanism, or consequence that makes the concept worth
+remembering.
 
 Prefer source-grounded phrasing over newly invented slogans. Rewrite to
-clarify the knowledge, not to create a new expression the user must
-learn again.
+clarify the knowledge while preserving familiar source meaning.
 
 Use examples where they clarify the reasoning. Treat source examples as
 the default source material to transform. Preserve, simplify,
@@ -91,14 +94,18 @@ as the backbone of the relevant explanation, then add only the knowledge
 needed to understand it.
 
 Integrate supporting knowledge where it explains the core concept.
-Use a separate supporting-knowledge section as a fallback when the user
-asks for it or when integration would make the concept harder to follow.
+Create a separate supporting-knowledge section when the user asks for it
+or when integration would make the concept harder to follow.
 
 Use diagrams or flowcharts when they make the source logic easier to
 understand than prose, tables, or the original source artifact.
 
 When embedding a source image, show a short visible caption or filename
-near the image so the user can identify it.
+near the image so the user can identify it. Introduce what the reader
+should notice in the image and connect it to the concept logic.
+
+Embed source images as teaching artifacts. Each image should actively
+carry part of the explanation.
 
 Choose headings and format from the concept's logic and the user's
 preferences.
@@ -114,6 +121,9 @@ chains according to what makes the knowledge easiest to understand.
 
 Keep paragraphs short. Include background only when it directly explains
 the knowledge.
+
+Fold practical use signals into the concept explanation as conditions,
+tests, consequences, or design responses.
 
 Preserve the source's intended meaning and teaching path when that path
 carries the knowledge. Generated examples should follow from the user's

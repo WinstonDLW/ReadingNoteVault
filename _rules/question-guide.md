@@ -14,8 +14,8 @@ Briefly show only enough context for the treatment plan:
 - the central and supporting concepts
 - the useful knowledge contribution
 
-Keep this section compact. Avoid repeating the same information as both
-a reasoning chain and an inventory.
+Keep this section compact. Present each idea once, choosing either a
+brief logic statement or inventory item.
 
 Then create a compact inventory only when it helps explain the treatment
 plan.
@@ -36,8 +36,7 @@ The inventory should include meaningful source content such as:
 - background or context
 - practical advice
 
-Present the logic map and inventory as input to note decisions, not as a
-note template.
+Present the logic map and inventory as input to note decisions.
 
 ## Build A Treatment Plan
 
@@ -76,12 +75,12 @@ Treatments may include:
 ## Ask When The Choice Matters
 
 Every note-generation run should include a question checkpoint before
-writing notes, unless the user has already given enough preferences in
-the current conversation or explicitly asks the assistant to use best
-judgment.
+writing notes. When the user has already given enough preferences in the
+current conversation or explicitly asks for best judgment, state the
+settled choices and continue.
 
 At the checkpoint, use the treatment plan as a negotiation surface.
-Rule-settled decisions should be visible, but they do not need questions.
+Show rule-settled decisions as settled choices.
 
 Ask about all meaningful preference decisions. Group related decisions
 into one question when that keeps the checkpoint readable.
@@ -96,23 +95,20 @@ Useful questions ask:
   compressed, or left out
 - how original source artifacts should carry the explanation when the
   user asks to preserve them
-- whether preserving a source example should also preserve the source's
-  explanation path
 - whether source wording should become general knowledge
 - which format would express the knowledge best: prose, bullets, table,
   diagram, flowchart, numbered chain, or another shape
 
-If only one reasonable choice exists because a rule settles it, state
-the decision without asking. If one reasonable choice exists by judgment
-rather than rule, ask the user to confirm or adjust it.
+When a rule settles the choice, state the decision. When judgment settles
+the choice, ask the user to confirm or adjust it.
 
-Generic approval questions are too weak. Ask about specific inventory
-items and their transformation into the note system.
+Ask specific questions about inventory items and their transformation
+into the note system.
 
 Make the rule source visible in the treatment plan when useful, so the
-user can see why a decision is not being asked.
+user can see why a decision is settled.
 
-A question about one selected item is not enough when several unresolved
-preference decisions affect note quality.
+When several unresolved preference decisions affect note quality, ask
+about each one or group related decisions clearly.
 
-Keep questions about note quality, not file mechanics.
+Keep questions focused on note quality and transformation decisions.

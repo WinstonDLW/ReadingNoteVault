@@ -14,17 +14,17 @@ contribution.
 In concept notes, link supporting concepts when the sentence explains a
 real relationship.
 
-In logs, link only the matching source note.
+In logs, reserve links for the matching source note.
 
 Use plain text for ordinary words, repeated mentions, and supporting
-terms without independent review value.
+terms that lack independent review value.
 
 ## New Links
 
 Create links to concept notes created or updated in the current work.
 
-Use plain text for concepts that are only mentioned and have no concept
-note yet.
+Use plain text for concepts that are only mentioned and lack a concept
+note.
 
 ## Aliases
 

@@ -43,7 +43,7 @@ Use this shape:
 
 Keep logs short and traceable.
 
-Use Obsidian links only for the matching source note.
+Reserve Obsidian links for the matching source note.
 
 Write created and updated concept notes as plain text filenames or names,
-not Obsidian links.
+with Obsidian links reserved for the matching source note.
