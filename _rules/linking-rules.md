@@ -1,34 +1,19 @@
 # Linking Rules
 
-Use these rules when adding Obsidian links.
+Use Obsidian links when opening the target would improve navigation or
+future review.
 
-Links should improve navigation and review.
+- In source notes, link concepts that carry the source's knowledge
+  contribution.
+- In concept notes, link supporting concepts when the text explains a
+  meaningful relationship.
+- In logs, link only the matching source note.
+- Use plain text for ordinary terms, repeated mentions, and concepts
+  without a useful link target.
+- Link concept notes created or updated in the current work when they
+  are meaningfully related.
 
-## Link Targets
-
-Link to concept notes when opening that note would help future review.
-
-In source notes, link the concepts that carry the source's knowledge
-contribution.
-
-In concept notes, link supporting concepts when the sentence explains a
-real relationship.
-
-In logs, reserve links for the matching source note.
-
-Use plain text for ordinary words, repeated mentions, and supporting
-terms that lack independent review value.
-
-## New Links
-
-Create links to concept notes created or updated in the current work.
-
-Use plain text for concepts that are only mentioned and lack a concept
-note.
-
-## Aliases
-
-Use aliases when natural sentence wording differs from the note title.
+Use an alias when natural wording differs from the note title:
 
 ```markdown
 [[concept-slug|Concept Name]]

@@ -1,37 +1,28 @@
 # Log Rules
 
-Use these rules when recording completed note-generation work.
-
-Each source has its own processing log.
-
-## Location And Name
-
-Store logs in:
+Each source has a processing log at:
 
 ```text
 2-logs/log-<source-slug>.md
 ```
 
-Use the same source slug as:
+Use the same slug as its source note.
 
-```text
-1-notes/sources/source-<source-slug>.md
-```
-
-## Entry
-
-Create the log if it is missing. Append a new entry when it exists.
+## Logging Scope
 
 Record:
 
-- date
-- processed scope
-- created notes
-- updated notes
-- brief change summary
-- link to the matching source note
+- a newly processed source scope
+- created or removed notes
+- changes to captured knowledge or note boundaries
+- meaningful source-reference changes
 
-Use this shape:
+Pure formatting, wording, and layout improvements do not require a log
+entry.
+
+## Entry
+
+Create the log when missing. Otherwise append a compact entry:
 
 ```markdown
 - YYYY-MM-DD | Scope
@@ -41,9 +32,4 @@ Use this shape:
   - Summary: brief change summary
 ```
 
-Keep logs short and traceable.
-
-Reserve Obsidian links for the matching source note.
-
-Write created and updated concept notes as plain text filenames or names,
-with Obsidian links reserved for the matching source note.
+Follow `linking-rules.md` for link treatment.

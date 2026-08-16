@@ -1,48 +1,15 @@
 # Note Rules
 
-Use these rules when creating or updating final notes.
+Use these rules when creating or updating final source and concept
+notes after edit approval.
 
-Good notes transport source knowledge into the vault. They should feel
-like reviewable knowledge shaped from the source.
-
-## Dynamic Abstraction
-
-Identify the reusable knowledge contributed by the source, then shape
-the note around the relationships needed to understand that knowledge.
-
-Let the central knowledge contribution control the note's scope.
-Supporting knowledge, examples, and artifacts are explanatory tools
-used to carry that contribution. Choose the smallest combination that
-makes the knowledge understandable.
-
-Let the source determine the note's structure. Its knowledge may be
-best expressed through compact prose, a causal explanation, a
-comparison, a sequence, a table, a diagram, or a combination of forms.
-
-Select source material according to the role it plays in conveying the
-knowledge. Preserve detail that carries reasoning, distinction, or
-explanatory value. Compress background, narration, and repetition to
-the amount needed for understanding.
-
-## Locations
+## Locations And Metadata
 
 Source notes:
 
 ```text
 1-notes/sources/source-<source-slug>.md
 ```
-
-Concept notes:
-
-```text
-1-notes/concepts/<concept-slug>.md
-```
-
-Use stable, readable slugs.
-
-## Metadata
-
-Start each source note with:
 
 ```markdown
 ---
@@ -51,7 +18,11 @@ created: YYYY-MM-DD
 ---
 ```
 
-Start each concept note with:
+Concept notes:
+
+```text
+1-notes/concepts/<concept-slug>.md
+```
 
 ```markdown
 ---
@@ -60,188 +31,103 @@ created: YYYY-MM-DD
 ---
 ```
 
-When updating an existing note, keep the original created date.
+Use stable, readable slugs. Keep the original creation date when
+updating an existing note.
 
 ## Source Notes
 
-A source note summarizes the knowledge contribution of one source and
-points to related concept notes.
-
-It answers: what useful knowledge does this source add?
-
-When mentioning a concept, link to its concept note.
-
-For a scope centered on an existing or newly created concept note, keep
-the source note brief: identify the concept and the source's
-contribution in one or two compact sentences.
-
-When one scope mainly introduces one concept, prefer one compact source
-entry. Mention the source's angle on the concept. Put mechanisms,
-examples, and detailed explanation in the concept note.
-
-Place concept explanation inside concept notes. Place examples inside
-concept notes when their purpose is to explain the concept.
-
-Choose the note shape from the content and the user's preferences.
-Possible shapes include compact prose, bullets, tables, diagrams,
-flowcharts, numbered chains, or combinations.
+A source note records the source's knowledge contribution and links the
+concept notes that carry it. For a scope centered on one concept, add
+one or two compact sentences describing the source's angle. Keep
+mechanisms and explanatory examples in the concept note.
 
 ## Concept Notes
 
-A concept note teaches reusable knowledge independent of the source
-where it was learned.
+A concept note teaches reusable knowledge independently of the source.
+Keep the body source-neutral and place source identity in source
+references.
 
-It captures the reusable idea and the relationships that make it
-understandable and useful.
+Add a source reference when the source meaningfully teaches the
+concept.
 
-Write the body in source-neutral language. Keep source identity in
-source references.
+Let the central knowledge contribution control the note's scope. Use
+supporting knowledge, examples, and artifacts only when they help carry
+that contribution. Choose the smallest combination that makes the
+knowledge understandable.
 
-Open with the useful knowledge. Start with the central distinction,
-problem, mechanism, or consequence that makes the concept worth
-remembering.
+Derive the structure from the source's useful reasoning. Preserve
+causal and prerequisite relationships. Introduce required context before
+the mechanisms, consequences, and artifacts that depend on it.
+Reorganize only when the new order preserves those relationships and
+improves clarity.
 
-Prefer source-grounded phrasing over newly invented slogans. Rewrite to
-clarify the knowledge while preserving familiar source meaning.
+Open with the distinction, problem, mechanism, or consequence that
+makes the concept worth remembering. Preserve technical subjects,
+notation, and dependency direction explicitly. Prefer concrete nouns
+when a pronoun or placeholder could be unclear.
 
-When the source defines a technical relationship, notation, or
-direction, preserve its subjects and direction explicitly. Use concrete
-technical nouns when a pronoun or placeholder could make the
-relationship unclear.
+### Examples And Supporting Knowledge
 
-Use examples where they clarify the reasoning. Treat source examples as
-the default source material to transform. Preserve, simplify,
-generalize, or replace them according to the question step.
+Transform source examples according to the agreed treatment. Preserve
+the details that carry the source's reasoning.
 
-When the user asks to keep a source example or provides source images,
-follow the source's explanation path for that example. Use the example
-as the backbone of the relevant explanation, then add only the knowledge
-needed to understand it.
-
-When an example supports a concept, weave its relevant details into the
-reasoning that explains that concept. Place each detail beside the
-distinction, mechanism, or consequence it makes concrete. Organize
-concept-note headings around the knowledge being learned and keep the
-example within the relevant explanation.
-
-Teach each relationship once. When an example can establish a
-distinction or mechanism, let it carry that explanation and state the
-abstraction where it becomes visible.
+When an example supports a concept, weave its details into the relevant
+distinctions and mechanisms. Let the example carry relationships it
+demonstrates instead of explaining them again separately. Organize
+concept-note headings around the knowledge being learned.
 
 Place supporting knowledge where it advances the central concept. When
-supporting knowledge has several useful treatments, present the options
-at the question checkpoint: create or update an individual concept
-note, integrate it into the central concept note, or keep it in the
-source note.
+its boundary remains open, follow the treatment agreed at the question
+checkpoint.
 
-## Reasoning Flow
+### Visuals And Other Representations
 
-Preserve the source's useful causal and explanatory relationships while
-shaping them into a compact note. Problems should lead naturally to
-their design responses, mechanisms should establish their consequences,
-and examples should appear where they support the reasoning.
+Use a visual when it carries relationships more clearly than prose.
+Establish its context before embedding it.
 
-Preserve prerequisite relationships in the source's explanation.
-Introduce the context, distinctions, and terms needed to understand a
-mechanism before presenting the mechanism's consequences or artifacts.
-Reorganize material when the new order retains those prerequisite
-relationships and makes the knowledge easier to follow. Choose headings
-that express the knowledge structure inferred from the source.
+Give each part a distinct role:
 
-Use diagrams or flowcharts when they make the source logic easier to
-understand than prose, tables, or the original source artifact.
+- introduction: what the reader should inspect
+- image: the visual structure
+- caption: the image's teaching role
+- follow-up: the conclusion revealed by the image
 
-When embedding a source image, show a short visible caption or filename
-near the image so the user can identify it. Introduce what the reader
-should notice in the image and connect it to the concept logic.
+Prose, tables, diagrams, and other representations should contribute
+different information. Let each carry what it expresses best.
 
-Embed source images as teaching artifacts. Establish the concepts,
-terms, or scenario represented by an image immediately before embedding
-it. Then state what the reader should examine and explain how its visual
-relationships advance the concept.
+### Compression And Style
 
-Give prose, tables, diagrams, and other representations distinct roles.
-Let each representation carry the information it expresses best, and
-use nearby prose to interpret its contribution to the concept.
+After drafting, identify the unique knowledge carried by each section,
+paragraph, list, table, and figure. Consolidate semantic repetition.
+Retain the briefest clear representation that preserves the useful
+knowledge and reasoning.
 
-Give each part of an embedded visual a distinct job:
-
-- the introduction establishes what the reader should inspect
-- the image carries the visual structure
-- the caption identifies the image's teaching role
-- the follow-up states the conclusion revealed by the image
-
-Choose headings and format from the concept's logic and the user's
-preferences.
-
-Check existing concept notes before creating a new one.
-
-## Semantic Compression
-
-After drafting, identify the unique knowledge carried by each
-paragraph, list, table, and figure. Consolidate material that carries
-the same distinction, relationship, mechanism, or consequence. Retain
-the briefest clear representation or combination that preserves the
-useful knowledge and reasoning. Prefer readable separation over reducing
-word count through dense sentence structure.
-
-Keep the note self-contained at the level of the extracted concept.
-Use the source note as the route to source-specific detail, extended
-examples, and complete context.
-
-## Style
-
-Keep notes clean, compact, and reviewable.
-
-Use paragraphs, bullets, tables, diagrams, flowcharts, or numbered
-chains according to what makes the knowledge easiest to understand.
-
-Keep paragraphs short. Include background only when it directly explains
-the knowledge.
-
-Keep most sentences focused on one main distinction, relationship,
-mechanism, or consequence. Split independent ideas into separate
-sentences.
-
-Use bullets for parallel distinctions, mechanisms, conditions, or
-steps. Introduce the list with a complete sentence and give each item a
-consistent grammatical form.
+Keep paragraphs short and sentences focused on one main relationship.
+Split independent ideas. Use concrete technical subjects. Use
+grammatically parallel bullets when several ideas share the same
+explanatory frame.
 
 Preserve operational guidance when the source explicitly contributes a
-procedure, decision method, condition, or failure response. Place it
-where the source uses it in the explanation. Let consequences already
-established by the concept explanation carry their practical meaning.
+procedure, decision method, condition, or failure response. Place that
+guidance where it advances the explanation.
 
-Preserve the source's intended meaning and teaching path when that path
-carries the knowledge. Generated examples should follow from the user's
-answer or from a missing/weak source example.
+Keep the note self-contained at the level of the extracted concept. Use
+the source note as the route to source-specific detail, extended
+examples, and complete context.
 
 ## Final Knowledge Check
 
-Before saving a concept note, confirm that:
+Before saving, confirm:
 
-- the note retains the source's central knowledge contribution
-- its structure reflects the useful reasoning inferred from the source
-- supporting knowledge follows the agreed note boundaries
-- enabling principles and mechanisms follow their agreed treatment
-- examples function as explanation
-- included images are introduced, captioned, and connected to the
-  concept
-- the placement of supporting knowledge, examples, and artifacts follows
-  the proposed knowledge flow
-- each section adds a new distinction, relationship, mechanism,
-  consequence, or necessary explanation
-- each representation contributes knowledge suited to its form
-- repeated explanations have been consolidated
-- background and example detail are proportional to their explanatory
-  value
-- prose sentences are complete and focused on one main relationship
-- parallel reasoning uses a scannable and grammatically consistent
-  structure
-- technical subjects and dependency directions remain explicit
-- the note contains the minimum source detail needed to understand the
-  extracted concept
-- the concept is understandable and reviewable on its own, while
-  source-specific detail and complete context remain in the source
-
-Create final notes directly.
+1. **Knowledge:** The note retains the central contribution and required
+   mechanisms.
+2. **Flow:** Its structure follows the useful source reasoning and the
+   proposed note flow.
+3. **Treatment:** Supporting knowledge, examples, artifacts, links, and
+   source references follow their agreed treatments.
+4. **Contribution:** Every section and representation adds unique
+   knowledge.
+5. **Readability:** Sentences are complete, focused, technically precise,
+   and scannable.
+6. **Compression:** The note contains the minimum detail needed to
+   review the extracted concept independently.

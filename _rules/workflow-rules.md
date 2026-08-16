@@ -1,91 +1,60 @@
 # Workflow Rules
 
-Use this controller whenever the user asks to generate notes from a
-book, chapter, article, section, page range, or similar source scope.
+Use this controller for requests to generate notes from a book, chapter,
+article, section, page range, or similar source scope.
 
-The user reads first. The assistant reads the same scope afterward,
-shows the proposed note decisions, asks preference questions, then
-writes final notes.
+The user reads first. The assistant reads the same scope, negotiates the
+note treatment, obtains edit approval, and then writes the notes.
 
-Read this file first. Load other rule files only when the current step
+Read this file first. Load the other rule files only when their step
 needs them.
 
 ## Steps
 
 1. Resolve source and scope.
 
-   Identify the exact source and requested scope. Ask a short
-   clarification question if either is unclear.
-
-   When the user names a source without giving a path or URL, look for
-   the original resource in `0-inbox/`. Use the original resource file as
-   the reading authority.
-
-   When the matching resource cannot be found in `0-inbox/`, ask the
-   user for the file path, URL, or corrected source name.
+   Identify the exact source and requested scope. When the user names a
+   source without a path or URL, look for the original resource in
+   `0-inbox/` and use it as the reading authority. Ask for clarification
+   when the source or scope remains unresolved.
 
 2. Read the requested scope.
 
-   Identify:
+   Use `question-guide.md` to identify the knowledge contribution,
+   reasoning, meaningful content, possible note boundaries, and
+   treatments that need user preference.
 
-   - the source's knowledge contribution
-   - the reasoning flow that makes that knowledge understandable
-   - central and supporting concepts
-   - enabling principles or mechanisms used to establish the central
-     knowledge
-   - examples and the roles they play in the explanation
-   - diagrams and other teaching artifacts
-   - background or context that directly supports the knowledge
-   - possible note boundaries and treatments that need the user's
-     preference
+3. Present the question checkpoint.
 
-3. Prepare questions.
+   Follow `question-guide.md`. Show the inferred logic, inventory and
+   treatment map, proposed note flow, settled decisions, and numbered
+   preference questions.
 
-   Use `question-guide.md`. Briefly show the inferred logic, compact
-   content inventory, item-to-treatment mapping, proposed note flow, and
-   settled treatment. Separate rule-settled decisions from decisions
-   that need user preference, then ask numbered questions only for the
-   preference decisions.
+4. Finalize and authorize the changes.
 
-4. Wait for the user's answer.
-
-   Continue when the user answers or explicitly asks the assistant to
-   use best judgment.
+   After receiving the user's preferences or applying requested best
+   judgment, restate the final treatment and files to be changed. Wait
+   for explicit edit approval unless the user has already approved that
+   exact change set.
 
 5. Generate final notes.
 
-   Use `update-rules.md` when existing notes may be affected.
-   Use `note-rules.md` for source and concept notes.
-   Use `linking-rules.md` before adding Obsidian links.
+   After approval, use `update-rules.md` for existing notes,
+   `note-rules.md` for source and concept notes, and `linking-rules.md`
+   for Obsidian links. Draft from the agreed treatment and proposed note
+   flow.
 
-   Draft from the inferred logic, content inventory, proposed knowledge
-   flow, and agreed treatments.
+6. Verify the result.
 
-   Before saving, reconcile the draft with the analysis and treatment
-   plan:
+   Apply the Final Knowledge Check in `note-rules.md`. Reconcile the
+   draft with the agreed inventory, treatments, and note flow before
+   saving.
 
-   - compare the actual structure and order with the proposed note flow
-   - confirm that supporting knowledge, examples, and artifacts appear
-     at their planned reasoning points
-   - identify the unique knowledge contributed by each section and
-     representation
-   - consolidate material that carries knowledge already established
-     elsewhere in the note
-   - confirm that every inventory item received its agreed treatment
-   - confirm that prose sentences are complete and focused on one main
-     relationship
-   - split dense sentences when separation improves scanning
-   - replace vague references with concrete technical subjects
-   - express parallel reasoning with consistent bullets when that shape
-     is clearer than prose
+7. Record qualifying work.
 
-6. Record the work.
-
-   Use `log-rules.md`.
+   Use `log-rules.md` when the completed work meets its logging scope.
 
 ## System Shape
 
-Source notes summarize a source's knowledge contribution, link to
-concept notes, and act as source navigation.
-
-Concept notes teach reusable knowledge.
+Source notes summarize a source's knowledge contribution and provide
+source navigation. Concept notes teach reusable knowledge.

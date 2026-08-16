@@ -1,43 +1,27 @@
 # Update Rules
 
-Use these rules when note generation touches existing source notes,
-concept notes, or source logs.
+Use these rules when note generation may affect existing notes.
 
 ## Source Notes
 
-Update the existing source note for the same source.
-
-Add the newly processed scope as a compact source-summary entry.
-
-Revise earlier source entries when the new work corrects an error,
-improves consistency, or clarifies the source's knowledge contribution.
+Update the existing source note for the same source. Add the newly
+processed scope as a compact source-summary entry. Revise earlier
+entries when the new work corrects or clarifies the source's knowledge
+contribution.
 
 ## Concept Notes
 
 Before creating a concept note, check for the same meaning under aliases
-or closely related names.
+or closely related names. Update a matching note when the source adds a
+correction, clearer reasoning, a better example, useful nuance, or a
+meaningful source reference.
 
-Update a matching concept note when the new source adds:
+Merge new knowledge into the existing structure. Preserve useful user
+wording while integrating necessary corrections. Keep the original
+creation date.
 
-- clearer reasoning
-- a better example
-- a useful practical signal
-- a correction
-- meaningful nuance
-- a meaningful source reference
+Choose the clearest standard concept name when boundaries overlap. Ask
+the user when the boundary remains uncertain.
 
-Merge new knowledge into the existing structure. Keep the body
-source-neutral and place source-specific context in source references or
-source notes.
-
-Choose the clearest standard concept name when two names refer to the
-same idea. Ask the user when the boundary is uncertain.
-
-## Source References
-
-Add a source reference when the source meaningfully teaches the concept.
-
-Keep existing useful wording, especially user-edited wording, while
-integrating corrections or clearer expression.
-
-Record changed notes in the matching source log.
+Use `note-rules.md` for writing, `linking-rules.md` for links, and
+`log-rules.md` to decide whether the update requires a log entry.
