@@ -17,6 +17,13 @@ needs them.
    Identify the exact source and requested scope. Ask a short
    clarification question if either is unclear.
 
+   When the user names a source without giving a path or URL, look for
+   the original resource in `0-inbox/`. Use the original resource file as
+   the reading authority.
+
+   When the matching resource cannot be found in `0-inbox/`, ask the
+   user for the file path, URL, or corrected source name.
+
 2. Read the requested scope.
 
    Identify the source logic, knowledge contribution, meaningful source
