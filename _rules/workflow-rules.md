@@ -31,6 +31,8 @@ needs them.
    - the source's knowledge contribution
    - the reasoning flow that makes that knowledge understandable
    - central and supporting concepts
+   - enabling principles or mechanisms used to establish the central
+     knowledge
    - examples and the roles they play in the explanation
    - diagrams and other teaching artifacts
    - background or context that directly supports the knowledge
@@ -40,9 +42,10 @@ needs them.
 3. Prepare questions.
 
    Use `question-guide.md`. Briefly show the inferred logic, compact
-   content inventory, and treatment plan. Separate rule-settled
-   decisions from decisions that need user preference, then ask numbered
-   questions only for the preference decisions.
+   content inventory, item-to-treatment mapping, proposed note flow, and
+   settled treatment. Separate rule-settled decisions from decisions
+   that need user preference, then ask numbered questions only for the
+   preference decisions.
 
 4. Wait for the user's answer.
 
@@ -55,9 +58,26 @@ needs them.
    Use `note-rules.md` for source and concept notes.
    Use `linking-rules.md` before adding Obsidian links.
 
-   Before saving, verify that the notes preserve the useful knowledge
-   and reasoning identified in step 2, honor the agreed treatments, and
-   express the result compactly without redundant representations.
+   Draft from the inferred logic, content inventory, proposed knowledge
+   flow, and agreed treatments.
+
+   Before saving, reconcile the draft with the analysis and treatment
+   plan:
+
+   - compare the actual structure and order with the proposed note flow
+   - confirm that supporting knowledge, examples, and artifacts appear
+     at their planned reasoning points
+   - identify the unique knowledge contributed by each section and
+     representation
+   - consolidate material that carries knowledge already established
+     elsewhere in the note
+   - confirm that every inventory item received its agreed treatment
+   - confirm that prose sentences are complete and focused on one main
+     relationship
+   - split dense sentences when separation improves scanning
+   - replace vague references with concrete technical subjects
+   - express parallel reasoning with consistent bullets when that shape
+     is clearer than prose
 
 6. Record the work.
 

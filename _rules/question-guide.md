@@ -14,6 +14,8 @@ Before preparing questions, identify:
 - the source's knowledge contribution
 - the reasoning flow that makes the contribution understandable
 - central and supporting knowledge
+- enabling principles or mechanisms used to establish the central
+  knowledge
 - examples and the roles they play in the explanation
 - diagrams and other teaching artifacts
 - background or context that directly supports the knowledge
@@ -26,6 +28,7 @@ Classify meaningful content using these roles:
 
 - central knowledge
 - supporting knowledge
+- enabling principle or mechanism
 - example
 - artifact
 - background or context
@@ -41,6 +44,13 @@ For each important item, include:
 
 - proposed treatment
 - reason
+
+Show the item-to-treatment mapping compactly. A table, short list, or
+another concise form may be used according to the current scope.
+
+Account for each enabling principle or mechanism through its agreed
+treatment: name or link it in the central note, create or update an
+individual concept note, or keep it in the source note.
 
 Separate the treatment plan into two groups:
 
@@ -61,6 +71,19 @@ explanation.
 Show the meaningful content and its role compactly so the user can
 understand the proposed treatment.
 
+### Treatment Map
+
+Show how each important inventory item will contribute to the note
+system and why. Make clear which items carry central knowledge, support
+another concept, serve as examples or artifacts, become links, or
+remain source-specific context.
+
+### Proposed Note Flow
+
+Show the intended knowledge flow of the note and indicate where
+examples and artifacts will carry the explanation. Treat this as a
+settled drafting plan derived from the source's reasoning.
+
 ### Settled Treatment
 
 State the relevant decisions supplied by the note system and the
@@ -72,6 +95,7 @@ source:
 - introduce, caption, and explain every included image
 - give prose, tables, diagrams, and other formats distinct explanatory
   roles
+- use concise sentences and scannable structures for parallel reasoning
 - update the matching source note and processing log
 
 Include only the settled decisions relevant to the current scope.
@@ -81,6 +105,11 @@ Include only the settled decisions relevant to the current scope.
 Ask focused questions when several useful treatments remain. Give each
 option enough context for the user to understand its effect on the
 notes.
+
+Distinguish mechanisms essential to the central knowledge, supporting
+concepts with independent review value, and context needed only by an
+example. Ask boundary questions for the supporting concepts whose
+treatment remains meaningfully open.
 
 Preference decisions commonly concern whether supporting knowledge
 should:
