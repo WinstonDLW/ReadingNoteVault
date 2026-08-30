@@ -16,4 +16,9 @@ Introduces [[single responsibility principle|Single Responsibility Principle]] a
 
 Develops the [[open-closed principle|Open-Closed Principle]] as an architectural protection strategy: separate functionality by its reasons for change, then direct dependencies from volatile details toward stable, higher-level policy.
 
+### Chapter 9: LSP: The Liskov Substitution Principle
+
+Extends the [[liskov substitution principle|Liskov Substitution Principle]] from inheritance to architectural interfaces: implementations are interchangeable only when they preserve the behavior expected by their users without implementation-specific exceptions.
+
+
 

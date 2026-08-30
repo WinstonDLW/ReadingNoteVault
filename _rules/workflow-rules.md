@@ -1,10 +1,9 @@
 # Workflow Rules
 
 Use this controller for requests to generate notes from a book, chapter,
-article, section, page range, or similar source scope.
-
-The user reads first. The assistant reads the same scope, negotiates the
-note treatment, obtains edit approval, and then writes the notes.
+article, section, page range, or similar source scope. The user reads
+first. The assistant reads the same scope, negotiates the note treatment,
+obtains edit approval, verifies the draft, and then writes the notes.
 
 Read this file first. Load the other rule files only when their step
 needs them.
@@ -18,43 +17,49 @@ needs them.
    `0-inbox/` and use it as the reading authority. Ask for clarification
    when the source or scope remains unresolved.
 
-2. Read the requested scope.
+2. Analyze the scope and discover affected notes.
 
    Use `question-guide.md` to identify the knowledge contribution,
    reasoning, meaningful content, possible note boundaries, and
-   treatments that need user preference.
+   treatments that need user preference. Use only the Discovery Before
+   Approval section of `update-rules.md` to find the matching source note
+   and concept notes with the same or closely related meanings. Use the
+   Locations And Metadata section of `note-rules.md`, plus the log path
+   and Logging Scope in `log-rules.md`, to determine the prospective file
+   changes.
 
 3. Present the question checkpoint.
 
-   Follow `question-guide.md`. Show the inferred logic, inventory and
-   treatment map, proposed note flow, settled decisions, and numbered
-   preference questions.
+   Follow `question-guide.md`. Show the compact reasoning and proposed
+   note flow, inventory and treatment map, and numbered preference
+   questions. Cover every preference-required item with a question.
 
 4. Finalize and authorize the changes.
 
    After receiving the user's preferences or applying requested best
-   judgment, restate the final treatment and files to be changed. Wait
-   for explicit edit approval unless the user has already approved that
-   exact change set.
+   judgment, show the final note flow and exact file and asset changes.
+   Refer to unchanged checkpoint items by their stable identifiers rather
+   than repeating their explanations. For each retained or replacement
+   artifact, include its semantic contract and approved simplifications.
+   The agreed inventory and treatments form the content boundary for
+   drafting. Wait for explicit edit approval unless the user has already
+   approved that exact change set.
 
-5. Generate final notes.
+5. Draft and verify the notes.
 
-   After approval, use `update-rules.md` for existing notes,
-   `note-rules.md` for source and concept notes, and `linking-rules.md`
-   for Obsidian links. Draft from the agreed treatment and proposed note
-   flow.
+   After approval, use the integration rules in `update-rules.md`, the
+   writing rules in `note-rules.md`, and `linking-rules.md` for Obsidian
+   links. Draft from the agreed treatment and final note flow. Apply the
+   Final Knowledge Check in `note-rules.md`. Render generated visuals and
+   compare them with their semantic contracts. Return to the checkpoint
+   before adding meaningful knowledge outside the agreed content boundary.
+   Keep successful verification internal; report failures or deviations.
 
-6. Verify the result.
+6. Write the verified result.
 
-   Apply the Final Knowledge Check in `note-rules.md`. Reconcile the
-   draft with the agreed inventory, treatments, and note flow before
-   saving.
+   After verification passes, write the final notes and assets to their
+   vault locations.
 
 7. Record qualifying work.
 
    Use `log-rules.md` when the completed work meets its logging scope.
-
-## System Shape
-
-Source notes summarize a source's knowledge contribution and provide
-source navigation. Concept notes teach reusable knowledge.

@@ -12,3 +12,10 @@
   - Updated: source-clean-architecture, log-clean-architecture
   - Summary: Added an architectural explanation of OCP using the financial-report example, dependency direction, information hiding, and Figures 8.2 and 8.3.
 
+- 2026-08-17 | Chapter 9 terminology and compression refinement
+  - Source: [[source-clean-architecture|Clean Architecture]]
+  - Created: none
+  - Updated: liskov substitution principle
+  - Summary: Preserved the source's technical subjects, removed derived review guidance, and consolidated repeated explanations.
+
+
