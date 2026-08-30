@@ -26,34 +26,42 @@ needs them.
    and concept notes with the same or closely related meanings. Use the
    Locations And Metadata section of `note-rules.md`, plus the log path
    and Logging Scope in `log-rules.md`, to determine the prospective file
-   changes.
+   changes. Keep source-role classification, treatment bookkeeping, file
+   changes, and logging decisions internal unless the user asks for them.
 
 3. Present the question checkpoint.
 
-   Follow `question-guide.md`. Show the compact reasoning and proposed
-   note flow, inventory and treatment map, and numbered preference
-   questions. Cover every preference-required item with a question.
+   Follow `question-guide.md`. Show the source's general contribution, an
+   ordered general note plan, and numbered preference questions. The plan
+   should explain what the note will introduce and how definitions,
+   mechanisms, examples, consequences, qualifications, and representations
+   will build on one another. Ask separately about every optional example,
+   qualification, supporting topic, or representation that could be
+   included, compressed, or omitted without losing the central knowledge.
+   Do not show an inventory table, decision statuses, prospective file
+   changes, or logging details unless requested.
 
 4. Finalize and authorize the changes.
 
    After receiving the user's preferences or applying requested best
-   judgment, show the final note flow and exact file and asset changes.
-   Refer to unchanged checkpoint items by their stable identifiers rather
-   than repeating their explanations. For each retained or replacement
-   artifact, include its semantic contract and approved simplifications.
-   The agreed inventory and treatments form the content boundary for
-   drafting. Wait for explicit edit approval unless the user has already
-   approved that exact change set.
+   judgment, show the final general note plan and content decisions. For
+   each retained or replacement artifact, state the knowledge it will
+   teach and any simplification that affects that knowledge. Keep the
+   detailed semantic contract and implementation change set internal. The
+   approved note plan forms the content boundary for drafting. Wait for
+   explicit edit approval unless the user has already approved that final
+   note plan.
 
 5. Draft and verify the notes.
 
    After approval, use the integration rules in `update-rules.md`, the
    writing rules in `note-rules.md`, and `linking-rules.md` for Obsidian
-   links. Draft from the agreed treatment and final note flow. Apply the
-   Final Knowledge Check in `note-rules.md`. Render generated visuals and
-   compare them with their semantic contracts. Return to the checkpoint
-   before adding meaningful knowledge outside the agreed content boundary.
-   Keep successful verification internal; report failures or deviations.
+   links. Draft from the approved content decisions and final note plan.
+   Apply the Final Knowledge Check in `note-rules.md`. Render generated
+   visuals and compare them with their semantic contracts. Return to the
+   checkpoint before adding meaningful knowledge outside the approved
+   content boundary. Keep successful verification internal; report
+   failures or deviations.
 
 6. Write the verified result.
 

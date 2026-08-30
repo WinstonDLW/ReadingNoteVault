@@ -2,7 +2,6 @@
 tags: [concept]
 created: 2026-08-16
 ---
-
 # Open-Closed Principle
 
 A software artifact should be open for extension but closed for modification. Extensions should minimize changes to stable code.

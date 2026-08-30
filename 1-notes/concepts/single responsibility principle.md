@@ -2,7 +2,6 @@
 tags: [concept]
 created: 2026-08-11
 ---
-
 # Single Responsibility Principle
 
 SRP says a module should be responsible to one actor.

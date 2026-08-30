@@ -18,4 +18,8 @@
   - Updated: liskov substitution principle
   - Summary: Preserved the source's technical subjects, removed derived review guidance, and consolidated repeated explanations.
 
-
+- 2026-08-30 | Chapter 10: ISP: The Interface Segregation Principle
+  - Source: [[source-clean-architecture|Clean Architecture]]
+  - Created: interface segregation principle
+  - Updated: source-clean-architecture, log-clean-architecture
+  - Summary: Added ISP as client-specific dependency design, including the OPS example and the architectural propagation of redeployment and failure through unnecessary dependencies.

@@ -59,10 +59,11 @@ supporting knowledge, examples, and artifacts only when they help carry
 that contribution. Choose the smallest combination that makes the
 knowledge understandable.
 
-Treat the agreed inventory and treatments as the note's content
-boundary. Give each section a distinct knowledge contribution from that
-boundary. This agreed boundary, rather than the source's section
-hierarchy or emphasis, determines inclusion in the concept note.
+Treat the approved general note plan, supported by the internal content
+inventory and treatments, as the note's content boundary. Give each
+section a distinct knowledge contribution from that boundary. This
+approved boundary, rather than the source's section hierarchy or
+emphasis, determines inclusion in the concept note.
 
 Derive the structure from the source's useful reasoning. Preserve
 causal and prerequisite relationships. Introduce required context before
@@ -70,12 +71,14 @@ the mechanisms, consequences, and artifacts that depend on it.
 Reorganize only when the new order preserves those relationships and
 improves clarity.
 
-Open with the distinction, problem, mechanism, or consequence that
-makes the concept worth remembering and why it matters. State the core
-relationship in plain language before introducing formal notation. Use
-notation when it improves precision without obscuring the point.
-Preserve technical subjects, relationship types, and relationship
-directions explicitly.
+Open with a direct thesis: state the distinction, problem, mechanism, or
+consequence itself. Avoid introductory framing such as "this note
+explains," "the source argues," or "the concept says" when the knowledge
+can be stated directly. Include why the concept matters only when that
+consequence adds necessary knowledge. State the core relationship in
+plain language before introducing formal notation. Use notation when it
+improves precision without obscuring the point. Preserve technical
+subjects, relationship types, and relationship directions explicitly.
 Prefer concrete nouns when a pronoun or placeholder could be unclear.
 
 Preserve the source's technical vocabulary and distinctions. Use one
@@ -128,17 +131,20 @@ artifact, and agreed semantic contract teach the same relationship.
 
 ### Compression And Style
 
-Use the agreed inventory to set the note's knowledge budget. Assign each
-claim or relationship to one primary passage or representation. After
-drafting, merge elements that answer the same review question, carrying
-any unique detail into the clearest one. Retain an additional
-representation when it adds a distinct relationship, mechanism, or
-consequence.
+Use the approved note plan and internal inventory to set the note's
+knowledge budget. Assign each claim or relationship to one primary
+passage or representation. After drafting, merge elements that answer the
+same review question, carrying any unique detail into the clearest one.
+Retain an additional representation when it adds a distinct relationship,
+mechanism, or consequence.
 
 Keep paragraphs short and sentences focused on one main relationship.
-Split independent ideas. Use concrete technical subjects. Use
-grammatically parallel bullets when several ideas share the same
-explanatory frame.
+Prefer concise, assertive declarative prose. Remove unnecessary hedging,
+filler transitions, and repeated framing. Preserve qualifiers required by
+the source's scope, conditions, causality, or uncertainty; assertiveness
+must not turn a conditional claim into a universal one. Split independent
+ideas. Use concrete technical subjects. Use grammatically parallel bullets
+when several ideas share the same explanatory frame.
 
 Operational guidance must correspond to a procedure, diagnostic method,
 decision criterion, condition, or failure response explicitly taught by
@@ -157,7 +163,7 @@ Before writing final vault files, confirm:
 1. **Knowledge:** The note retains the central contribution and required
    mechanisms.
 2. **Flow:** Its structure follows the useful source reasoning and the
-   final note flow.
+   approved general note plan.
 3. **Treatment:** Supporting knowledge, examples, artifacts, links, and
    source references follow their agreed treatments.
 4. **Representation fidelity:** Every representation preserves its
@@ -165,8 +171,8 @@ Before writing final vault files, confirm:
    invariants. Generated visuals pass rendered inspection.
 5. **Contribution:** Every section and representation adds unique
    knowledge, and each relationship has one clearest primary expression.
-6. **Readability:** Sentences are complete, focused, technically precise,
-   and scannable.
+6. **Readability:** Sentences are complete, direct, concise, assertive,
+   technically precise, and scannable.
 7. **Compression:** The note contains the minimum detail needed to
    review the extracted concept independently, with no removable
    semantic overlap.

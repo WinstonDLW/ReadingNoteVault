@@ -20,5 +20,7 @@ Develops the [[open-closed principle|Open-Closed Principle]] as an architectural
 
 Extends the [[liskov substitution principle|Liskov Substitution Principle]] from inheritance to architectural interfaces: implementations are interchangeable only when they preserve the behavior expected by their users without implementation-specific exceptions.
 
+### Chapter 10: ISP: The Interface Segregation Principle
 
+Develops the [[interface segregation principle|Interface Segregation Principle]] from client-specific operation interfaces into an architectural rule: depending on unused capabilities allows unrelated changes and failures to propagate through a system.
 

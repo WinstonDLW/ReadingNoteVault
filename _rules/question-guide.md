@@ -28,57 +28,46 @@ treatment in the note. Source importance identifies what the material
 contributes; the agreed note boundary determines whether that
 contribution is preserved, relocated, compressed, or omitted.
 
-Use one inventory item for each independently treatable knowledge unit,
-not for every detail or example. Group details and examples when they
-establish the same claim and receive the same treatment. Assign each
-inventory item a stable identifier and present it once.
+Maintain an internal content inventory using one entry for each
+independently treatable knowledge unit, not for every detail or example.
+Group details and examples when they establish the same claim and receive
+the same treatment. For each entry, determine its role, treatment, reason,
+and whether the decision is settled by a rule, known preference, requested
+best judgment, or a question. Do not expose this bookkeeping unless the
+user requests it.
+
+Treat a nonessential item as preference-required when including,
+compressing, or omitting it would all leave the central contribution
+understandable and the user's preference is not already known. This
+includes standalone qualifications, language-specific discussion,
+secondary examples, supporting concepts, source digressions, and optional
+representations. A source heading or substantial amount of source text
+does not by itself make such material mandatory.
 
 ## Present The Checkpoint
 
-Every note-generation run includes a compact checkpoint.
+Every note-generation run includes a compact, content-first checkpoint.
 
-### Reasoning And Proposed Note Flow
+### Source Contribution
 
-Show the source's useful reasoning and the proposed progression of note
-claims as one compact sequence. Identify where the note order differs
-from the source reasoning. Preserve causal and prerequisite relationships,
-and attach supporting knowledge, examples, and artifacts to the claims
-they help explain.
+Give the user a short general idea of what the requested scope introduces,
+why it matters, and the central relationship or problem it explains.
 
-Operational guidance enters the flow when the inventory identifies a
-procedure, diagnostic method, decision criterion, condition, or failure
-response taught by the source.
+### General Note Plan
 
-### Inventory And Treatment Map
+Present the proposed note as an ordered content plan. Begin with the
+definition, distinction, problem, or context needed to understand the
+concept. Then show how mechanisms, examples, consequences, qualifications,
+and representations will develop the explanation. State what each part
+will teach and how it supports the preceding knowledge.
 
-Map each inventory identifier to its source role, proposed treatment,
-reason, and decision status. Use a table, short list, or another concise
-form suited to the scope. Expand entries only when needed to explain a
-preference-required decision, artifact, or boundary-sensitive mechanism.
+Preserve causal and prerequisite relationships. Identify where the note
+order differs materially from the source. Attach examples and artifacts
+to the knowledge they explain instead of listing them as separate
+inventory records.
 
-Before presenting the checkpoint, confirm that every inventory item
-appears once with a treatment, concise reason, and one of these statuses:
-
-- **rule-settled:** required by the vault rules
-- **preference-known:** explicitly established by the user
-- **preference-required:** multiple useful treatments remain
-- **agent-selected:** chosen because the user requested best judgment
-
-Treatments may include:
-
-- create or update an individual concept note
-- merge into an existing concept note
-- integrate as supporting knowledge
-- keep source-specific context or navigation only in the source note
-- preserve, simplify, generalize, replace, compress, or omit source
-  material
-- represent knowledge through prose, bullets, a table, a diagram, or
-  another suitable form
-
-For each proposed transformation, state what source details, causal
-structure, and established knowledge the resulting note will retain.
-Replacing an artifact changes its representation while preserving its
-agreed semantic contract. State any proposed simplification.
+Operational guidance enters the plan when the source teaches a procedure,
+diagnostic method, decision criterion, condition, or failure response.
 
 Account for each enabling principle or mechanism. Name or link it in the
 central concept note, integrate it as supporting knowledge, or give it an
@@ -88,13 +77,25 @@ does not contribute reusable conceptual knowledge.
 
 ### Preference Decisions
 
-Ask numbered questions only when multiple useful treatments remain.
-Distinguish essential mechanisms from supporting concepts with
-independent review value and from context needed only by an example.
+Ask a separate numbered question for each independent choice that would
+materially change the note's content or future review experience. Useful
+questions may cover the depth of an example, inclusion of a qualification,
+the boundary of supporting knowledge, the amount of operational detail,
+or the representation of a visual relationship.
 
-Give enough context to show how each option would affect future review.
-Group choices when they share the same knowledge relationship and parent
-treatment. Keep every preference-required item covered by a question.
+Before presenting the checkpoint, confirm that every nonessential
+inventory entry with more than one useful treatment is covered by a
+preference question. Do not silently include a qualification or supporting
+section merely because it makes the note more comprehensive.
+
+Use the knowledge or example name in each question. Do not use inventory
+identifiers or status labels. Give enough context to show how each option
+would affect the resulting note. Do not combine unrelated examples,
+qualifications, or representations into one broad choice. Group decisions
+only when one parent content decision genuinely settles them together.
+
+Do not ask the user about note paths, logs, or other implementation work.
+Ask only about choices that affect captured knowledge or its presentation.
 
 For each artifact, decide in this order:
 
@@ -102,11 +103,12 @@ For each artifact, decide in this order:
 2. which representation should carry that knowledge
 3. how to obtain the selected asset
 
-For a retained or replacement artifact, record a compact semantic
-contract. Identify its teaching claim and the structural facts that
-carry it, such as essential entities, relationship types and directions,
-contrasts, invariants, and approved simplifications. Include only the
-facts needed to preserve the artifact's teaching role.
+For a retained or replacement artifact, record an internal compact
+semantic contract. Identify its teaching claim and the structural facts
+that carry it, such as essential entities, relationship types and
+directions, contrasts, invariants, and approved simplifications. In the
+checkpoint, present only the teaching claim, meaningful representation
+options, and simplifications that affect the knowledge.
 
 Associate each artifact with the knowledge or example it supports. Let
 the parent content decision settle the artifact unless the artifact
@@ -114,10 +116,9 @@ independently carries knowledge selected for preservation. Express
 conditional representation choices after their parent scope decision.
 
 When an accessible source visual is selected but no vault asset exists,
-include its extraction in the proposed change set. Request an asset from
-the user when the source visual is inaccessible or a different version
-is wanted.
+plan its extraction internally. Request an asset from the user only when
+the source visual is inaccessible or a different version is wanted.
 
 When the user's preferences are already known or the user requests best
-judgment, mark those treatments accordingly and return to
-`workflow-rules.md` to finalize the flow and request edit approval.
+judgment, settle those choices internally and return to
+`workflow-rules.md` to present the final note plan and request edit approval.
