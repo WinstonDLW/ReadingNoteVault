@@ -23,3 +23,10 @@
   - Created: interface segregation principle
   - Updated: source-clean-architecture, log-clean-architecture
   - Summary: Added ISP as client-specific dependency design, including the OPS example and the architectural propagation of redeployment and failure through unnecessary dependencies.
+
+- 2026-09-13 | Chapter 11: DIP: The Dependency Inversion Principle
+  - Source: [[source-clean-architecture|Clean Architecture]]
+  - Created: dependency inversion principle
+  - Updated: source-clean-architecture
+  - Summary: Added stable abstractions, coding practices, the Abstract Factory example with existing Figure 11.1, dependency direction against control flow, and isolation of concrete dependencies through main.
+

@@ -1,178 +1,172 @@
 # Note Rules
 
-Use these rules when creating or updating final source and concept
-notes after edit approval.
+Use these standards when planning, creating, or updating notes. Follow
+`workflow-rules.md` for authorization and routing.
+
+## Reading Note Standard
+
+A reading note distills selected knowledge for quick review after reading
+the resource. The reader should recover the central claim, its essential
+reasoning, and its conditions with substantially less reading effort.
+Preserve knowledge, not the source's paragraph sequence or full teaching
+explanation. A paragraph-by-paragraph paraphrase fails this standard even
+when accurate and shorter than the source.
+
+Start with the core claim. Organize the remaining knowledge into compact
+relationships, distinctions, conditions, or source-taught rules. Use short
+prose, bullets, or a table according to the knowledge; changing prose into
+bullets without distilling it is not compression. The user selects which
+points to retain; these rules govern their concision, wording, and format.
+Keeping a point or example does not require its full source explanation.
 
 ## Locations And Metadata
 
-Source notes:
+| Artifact | Location | Required tag |
+| --- | --- | --- |
+| Source note | `1-notes/sources/source-<source-slug>.md` | `source` |
+| Concept note | `1-notes/concepts/<concept-name>.md` | `concept` |
+| Final asset | `3-resource/<source-slug>-<descriptive-name>.<ext>` | None |
 
-```text
-1-notes/sources/source-<source-slug>.md
-```
+Both note types use YAML frontmatter with `tags: [source]` or
+`tags: [concept]` and `created: YYYY-MM-DD`. Use the local creation date
+for new notes; preserve existing creation dates and filenames.
 
-```markdown
----
-tags: [source]
-created: YYYY-MM-DD
----
-```
-
-Concept notes:
-
-```text
-1-notes/concepts/<concept-slug>.md
-```
-
-```markdown
----
-tags: [concept]
-created: YYYY-MM-DD
----
-```
-
-Use stable, readable slugs. Keep the original creation date when
-updating an existing note.
+For new files, use lowercase, hyphen-separated source slugs and asset
+names. Concept filenames use the lowercase standard concept name with
+spaces, following existing notes. Avoid invalid filename characters and
+resolve collisions without overwriting unrelated content. Reuse suitable
+existing assets. Temporary artifacts follow `AGENTS.md`.
 
 ## Source Notes
 
-A source note records the source's knowledge contribution, provides a
-route to the original source and processed scope, and links the concept
-notes that carry reusable knowledge. For a scope centered on one concept,
-add one or two compact sentences describing the source's angle. Keep
-reusable mechanisms and explanatory examples in concept notes. Retain
-material only in the source note when it is source-specific context or
-navigation rather than reusable conceptual knowledge.
+A source note records the source's contribution and provides navigation.
+Identify the title and author when available, link the original file or
+URL, and record each processed scope with links to its concept notes.
+For scope centered on one concept, use one or two sentences describing
+the source's angle. Keep reusable mechanisms and explanatory examples in
+concept notes; retain only source-specific context and navigation here.
 
 ## Concept Notes
 
-A concept note teaches reusable knowledge independently of the source.
-Keep the body source-neutral and place source identity in source
-references. Source-neutral writing removes dependence on the source's
-narrative context while preserving its demonstrated knowledge.
+A concept note captures reusable knowledge independently of the source's
+narrative. Keep the body source-neutral and put provenance in a source
+reference linking the source note and identifying the relevant chapter,
+section, or pages. Include a reference when that source meaningfully
+teaches the concept. Distinguish printed page numbers from file page
+indices when they differ.
 
-Add a source reference when the source meaningfully teaches the
-concept.
+Follow the approved content changes and the preservation rules in
+`update-rules.md`. Let the central contribution control scope, not the
+source's headings or emphasis. Abstract knowledge from the resource,
+retaining the essential relationships and conditions needed to review the
+selected concept. Independent review does not require reproducing the full
+lesson or walkthrough. Do not estimate or ask about the user's background
+knowledge, or add prerequisite teaching to fill assumed gaps. Use source
+references for full explanations and unretained detail.
 
-Let the central knowledge contribution control the note's scope. Use
-supporting knowledge, examples, and artifacts only when they help carry
-that contribution. Choose the smallest combination that makes the
-knowledge understandable.
-
-Treat the approved general note plan, supported by the internal content
-inventory and treatments, as the note's content boundary. Give each
-section a distinct knowledge contribution from that boundary. This
-approved boundary, rather than the source's section hierarchy or
-emphasis, determines inclusion in the concept note.
-
-Derive the structure from the source's useful reasoning. Preserve
-causal and prerequisite relationships. Introduce required context before
-the mechanisms, consequences, and artifacts that depend on it.
-Reorganize only when the new order preserves those relationships and
-improves clarity.
+Preserve causal and prerequisite relationships while organizing for quick
+retrieval of the selected knowledge. Combine source passages that establish
+one relationship; retain essential reasoning without repeating each step
+of the source's exposition. Organize headings around knowledge.
 
 Open with a direct thesis: state the distinction, problem, mechanism, or
-consequence itself. Avoid introductory framing such as "this note
-explains," "the source argues," or "the concept says" when the knowledge
-can be stated directly. Include why the concept matters only when that
-consequence adds necessary knowledge. State the core relationship in
-plain language before introducing formal notation. Use notation when it
-improves precision without obscuring the point. Preserve technical
-subjects, relationship types, and relationship directions explicitly.
-Prefer concrete nouns when a pronoun or placeholder could be unclear.
+consequence itself. Avoid framing such as "this note explains" or "the
+source argues" when knowledge can be stated directly. Include why it
+matters when that consequence adds necessary knowledge. Explain the core
+relationship plainly before using notation; use notation for precision.
+Make technical subjects and relationship types and directions explicit.
 
-Preserve the source's technical vocabulary and distinctions. Use one
-stable term for each concept. When the source changes terminology to
-mark a broader abstraction, state that transition once. Define an
-overloaded technical term when readers could mistake its ordinary
-meaning for its role in the source.
+In notes and selection checkpoints, preserve the resource's terminology,
+named entities, technical distinctions, tone, and degree of certainty.
+Use its recognizable terms rather than new umbrella labels. Distill the
+prose while retaining its directness; remove narrative padding and added
+commentary. Use one stable term per concept; explain once when terminology
+changes to mark a broader abstraction. Define overloaded terms using their
+meaning in the resource when ambiguity would distort the knowledge.
 
 ### Examples And Supporting Knowledge
 
-Transform source examples exactly according to the agreed treatment.
-Compression keeps the details needed to carry the reasoning.
-Generalization keeps the causal scenario with broader details. Omission
-removes the scenario and retains only the knowledge it establishes.
+Apply the user's inclusion decisions:
 
-When an example supports a concept, weave its details into the relevant
-distinctions and mechanisms. Let the example carry relationships it
-demonstrates instead of explaining them again separately. Organize
-concept-note headings around the knowledge being learned.
+- **Retained point:** Distill its claim and essential reasoning without
+  dropping distinct selected knowledge.
+- **Retained example:** Keep the source's scenario and the minimum details
+  that demonstrate its selected teaching point. Do not add a walkthrough
+  merely because the user kept the example.
+- **Omitted example:** Remove its scenario while preserving independently
+  selected claims it establishes.
+- **Omitted point:** Exclude it from the new content. Preserve independently
+  selected knowledge and existing knowledge protected by `update-rules.md`.
 
-Place supporting knowledge where it advances the central concept. When
-its boundary remains open, follow the treatment agreed at the question
-checkpoint.
-
-When several source examples establish breadth, express the shared
-category they demonstrate. Retain named technologies when they establish
-a meaningful boundary or contrast.
-
-### Visuals And Other Representations
-
-Follow the agreed representation treatment. When it selects a visual,
-connect the visual to the explanation and state its teaching point once.
-Choose the minimum framing needed from an introduction, caption, or
-follow-up. Add another element when it contributes a relationship that
-the visual and existing explanation do not already make clear.
-
-Treat a replacement visual as a change of medium. Preserve its agreed
-semantic contract and apply only approved simplifications. Choose a
-notation whose conventions match the represented knowledge. Distinguish
-relationship types and label them when their meaning could be unclear.
-
-Assign each relationship to the prose, example, table, diagram, code, or
-other representation that expresses it most clearly. Let supporting
-representations add context, evidence, mechanism, or consequence.
-
-Render each generated visual before saving. Inspect its labels, layout,
-entities, relationship types and directions, contrasts, and invariants.
-Confirm that the rendered visual, surrounding explanation, source
-artifact, and agreed semantic contract teach the same relationship.
-
-### Compression And Style
-
-Use the approved note plan and internal inventory to set the note's
-knowledge budget. Assign each claim or relationship to one primary
-passage or representation. After drafting, merge elements that answer the
-same review question, carrying any unique detail into the clearest one.
-Retain an additional representation when it adds a distinct relationship,
-mechanism, or consequence.
-
-Keep paragraphs short and sentences focused on one main relationship.
-Prefer concise, assertive declarative prose. Remove unnecessary hedging,
-filler transitions, and repeated framing. Preserve qualifiers required by
-the source's scope, conditions, causality, or uncertainty; assertiveness
-must not turn a conditional claim into a universal one. Split independent
-ideas. Use concrete technical subjects. Use grammatically parallel bullets
-when several ideas share the same explanatory frame.
+Weave retained examples and supporting points into the relationships they
+explain. Combine repeated claims across examples while preserving the
+distinct contribution of each selected example. Keep source names and
+details that establish a meaningful boundary or contrast.
 
 Operational guidance must correspond to a procedure, diagnostic method,
 decision criterion, condition, or failure response explicitly taught by
-the source. Preserve its original function and place it where it
-advances the explanation.
+the source. Preserve its function and place it where it advances the
+explanation.
 
-Keep the note self-contained by providing the minimum context and
-reasoning needed to understand the extracted concept without reopening
-the source. Use the source note as the route to source-specific detail,
-extended examples, and complete context.
+### Visuals And Other Representations
+
+Follow the selected artifacts, final plan, and semantic contract defined
+in `question-guide.md`. A replacement visual changes the medium while
+preserving that contract. Use suitable notation and label relationships
+whose meaning could be unclear. Connect visuals to the explanation with
+the minimum introduction, caption, or follow-up needed.
+
+Render generated visuals in temporary storage before writing final vault
+files. Inspect labels and layout, and compare the result and surrounding
+explanation with the semantic contract and source artifact when present.
+Follow the workflow's failure handling if rendering or verification fails.
+
+### Compression And Style
+
+Before composing prose, reduce the agreed content to its claims, essential
+relationships, and necessary qualifications. Draft from that distilled
+content, not by rewriting each source paragraph. Remove narrative setup,
+repeated motivation, transitional explanation, and example detail that
+does not carry selected knowledge. Preserve technical meaning and causal
+links; do not compress into vague slogans or disconnected keywords.
+
+Give each claim or relationship one clearest primary expression in prose,
+an example, table, diagram, code, or another representation. Merge elements
+that answer the same review question, preserving unique detail. Keep an
+additional section or representation only when it carries distinct,
+confirmed knowledge. Do not explain the same mechanism in an introduction,
+caption, walkthrough, and concluding paragraph. A retained example should
+carry its selected teaching point with the least detail that preserves it.
+
+Keep paragraphs short and sentences focused on one main relationship.
+Use complete, direct, concise, assertive declarative prose and concrete
+technical subjects. Remove unnecessary hedging, filler, and repeated
+framing. Preserve qualifiers required by scope, conditions, causality,
+or uncertainty; never turn conditional claims into universal ones. Split
+independent ideas; use parallel bullets for ideas sharing a frame.
 
 ## Final Knowledge Check
 
 Before writing final vault files, confirm:
 
-1. **Knowledge:** The note retains the central contribution and required
-   mechanisms.
-2. **Flow:** Its structure follows the useful source reasoning and the
-   approved general note plan.
-3. **Treatment:** Supporting knowledge, examples, artifacts, links, and
-   source references follow their agreed treatments.
-4. **Representation fidelity:** Every representation preserves its
-   approved entities, relationship types and directions, contrasts, and
-   invariants. Generated visuals pass rendered inspection.
-5. **Contribution:** Every section and representation adds unique
-   knowledge, and each relationship has one clearest primary expression.
-6. **Readability:** Sentences are complete, direct, concise, assertive,
-   technically precise, and scannable.
-7. **Compression:** The note contains the minimum detail needed to
-   review the extracted concept independently, with no removable
-   semantic overlap.
+1. **Knowledge:** Central claims, required mechanisms, accuracy-critical
+   qualifications, and existing knowledge protected by the update rules
+   are preserved.
+2. **Flow:** Structure preserves useful reasoning and follows the approved
+   changes.
+3. **Selection:** All meaningful source points were presented with their
+   roles and contributions. Every optional point has an explicit inclusion
+   decision or scoped delegation; the draft preserves the selected knowledge.
+   An unanswered inclusion question fails this check.
+4. **Fidelity:** Representations meet their semantic contracts; generated
+   visuals pass rendered inspection.
+5. **Distillation:** The note enables substantially faster review of the
+   selected knowledge. If it still follows source paragraphs or requires
+   reading through a similar explanatory journey, redraft it. Added lessons,
+   commentary, and repeated explanations are removed. Do not shorten by
+   dropping confirmed knowledge or accuracy-critical qualifications.
+6. **Readability:** Prose is complete, direct, concise, technically precise,
+   and scannable; source terminology and tone are preserved, and the concept
+   can be reviewed independently.
+7. **Navigation:** Required metadata and scope references are present;
+   note links, source routes, and asset embeds resolve to intended targets.

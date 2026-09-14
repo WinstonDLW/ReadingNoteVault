@@ -15,7 +15,7 @@ A system displays a financial summary on the web. A new requirement adds a print
 Report calculation and each presentation have different reasons to change:
 
 - **Separate responsibilities:** The single responsibility principle separates report calculation from web and print presentation.
-- **Direct dependencies:** Dependency Inversion arranges source-code dependencies so a new presentation does not force changes to calculation policy.
+- **Direct dependencies:** [[dependency inversion principle|Dependency Inversion]] arranges source-code dependencies so a new presentation does not force changes to calculation policy.
 
 The detailed design partitions the example into components. It places interfaces (`<I>`) so source-code dependencies cross each component boundary in one direction.
 

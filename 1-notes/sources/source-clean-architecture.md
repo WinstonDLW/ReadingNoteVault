@@ -6,6 +6,8 @@ created: 2026-08-11
 
 Source: *Clean Architecture: A Craftsman's Guide to Software Structure and Design* by Robert C. Martin.
 
+Original: [[0-inbox/Clean Architecture A Craftsman Guide to Software Structure and Design.pdf|Book PDF]]
+
 ## Processed Scope
 
 ### Chapter 7: SRP: The Single Responsibility Principle
@@ -23,4 +25,8 @@ Extends the [[liskov substitution principle|Liskov Substitution Principle]] from
 ### Chapter 10: ISP: The Interface Segregation Principle
 
 Develops the [[interface segregation principle|Interface Segregation Principle]] from client-specific operation interfaces into an architectural rule: depending on unused capabilities allows unrelated changes and failures to propagate through a system.
+
+### Chapter 11: DIP: The Dependency Inversion Principle
+
+Develops the [[dependency inversion principle|Dependency Inversion Principle]] through stable abstractions and an Abstract Factory, showing how source dependencies point toward business rules against the flow of control and how unavoidable concrete dependencies can be isolated.
 

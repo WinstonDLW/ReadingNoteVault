@@ -1,73 +1,67 @@
 # Workflow Rules
 
-Use this controller for requests to generate notes from a book, chapter,
-article, section, page range, or similar source scope. The user reads
-first. The assistant reads the same scope, negotiates the note treatment,
-obtains edit approval, verifies the draft, and then writes the notes.
+Read this controller first. Load each supporting rule file when needed;
+reuse it during the task unless it changes.
 
-Read this file first. Load the other rule files only when their step
-needs them.
+## Routing
+
+- For source-based extraction or substantive knowledge changes, use the
+  full workflow below. The user reads first; the assistant reads the same
+  scope.
+- For wording, formatting, links, or layout maintenance, apply the relevant
+  writing, linking, and update rules directly within the user's request.
+  Preserve meaning; raise any proposed knowledge change before making it.
+- For rule reviews or edits, inspect and change the requested rules
+  directly. The note-generation checkpoint and source logs do not apply.
+
+Show the source's meaningful points, their roles and contributions, and
+keep/omit choices before proposing the final note organization. Keep
+technical bookkeeping, semantic-contract details, paths, logging decisions,
+and successful verification internal unless requested. Content selection
+belongs to the user; compression and formatting follow `note-rules.md`.
+Report verification failures and deviations.
 
 ## Steps
 
-1. Resolve source and scope.
+1. **Resolve and read the source scope.** Identify the exact source and
+   scope. Without a supplied path or URL, look in `0-inbox/` for the
+   original reading authority. Ask when the source or scope remains
+   unresolved; do not substitute remembered content for inaccessible text.
 
-   Identify the exact source and requested scope. When the user names a
-   source without a path or URL, look for the original resource in
-   `0-inbox/` and use it as the reading authority. Ask for clarification
-   when the source or scope remains unresolved.
+2. **Analyze and discover.** Use `question-guide.md` to analyze the scope.
+   Use Discovery Before Approval in `update-rules.md` to find matching
+   notes, and Locations And Metadata in `note-rules.md` to resolve
+   prospective paths. Apply the note-writing principles when planning.
 
-2. Analyze the scope and discover affected notes.
+3. **Ask and wait.** Follow `question-guide.md` to present all meaningful
+   source points and their roles, then ask which optional points to keep.
+   Include examples, supporting explanations, and source artifacts in this
+   selection checkpoint. Unanswered questions block note drafting and final
+   vault writes. Stop and wait for the user's
+   answers; continue only independent source reading or discovery. Do not
+   choose a recommended option on the user's behalf or treat silence,
+   a preselected option, an empty tool response, or elapsed time as an answer.
 
-   Use `question-guide.md` to identify the knowledge contribution,
-   reasoning, meaningful content, possible note boundaries, and
-   treatments that need user preference. Use only the Discovery Before
-   Approval section of `update-rules.md` to find the matching source note
-   and concept notes with the same or closely related meanings. Use the
-   Locations And Metadata section of `note-rules.md`, plus the log path
-   and Logging Scope in `log-rules.md`, to determine the prospective file
-   changes. Keep source-role classification, treatment bookkeeping, file
-   changes, and logging decisions internal unless the user asks for them.
+4. **Plan and authorize.** After selection, give a compact final plan showing
+   how the core knowledge and retained points will be organized into notes
+   and representations. Follow `note-rules.md` for concision; do not reopen
+   selection as questions about depth or formatting. The selections and
+   approved plan define the content changes. Authorization to write files
+   does not answer content questions. Obtain edit approval unless existing
+   authorization covers these confirmed changes. Answers accompanied by
+   "go ahead" authorize the resulting plan when they fully determine it;
+   state that plan and proceed. Otherwise present the resolved plan for
+   approval. Reuse approval of an unchanged plan. Ask again only for
+   unresolved content choices or changes outside the authorized scope.
+   Permission to use judgment settles only choices explicitly delegated
+   for this scope; by itself it does not authorize file edits.
 
-3. Present the question checkpoint.
+5. **Draft and verify.** Apply Integration After Approval in
+   `update-rules.md`, the writing rules and Final Knowledge Check in
+   `note-rules.md`, and `linking-rules.md`. Resolve checks before writing
+   final files. If a check cannot be completed, report the limitation and
+   leave the affected artifact and dependent changes unresolved. Do not
+   claim verification passed or silently substitute another representation.
 
-   Follow `question-guide.md`. Show the source's general contribution, an
-   ordered general note plan, and numbered preference questions. The plan
-   should explain what the note will introduce and how definitions,
-   mechanisms, examples, consequences, qualifications, and representations
-   will build on one another. Ask separately about every optional example,
-   qualification, supporting topic, or representation that could be
-   included, compressed, or omitted without losing the central knowledge.
-   Do not show an inventory table, decision statuses, prospective file
-   changes, or logging details unless requested.
-
-4. Finalize and authorize the changes.
-
-   After receiving the user's preferences or applying requested best
-   judgment, show the final general note plan and content decisions. For
-   each retained or replacement artifact, state the knowledge it will
-   teach and any simplification that affects that knowledge. Keep the
-   detailed semantic contract and implementation change set internal. The
-   approved note plan forms the content boundary for drafting. Wait for
-   explicit edit approval unless the user has already approved that final
-   note plan.
-
-5. Draft and verify the notes.
-
-   After approval, use the integration rules in `update-rules.md`, the
-   writing rules in `note-rules.md`, and `linking-rules.md` for Obsidian
-   links. Draft from the approved content decisions and final note plan.
-   Apply the Final Knowledge Check in `note-rules.md`. Render generated
-   visuals and compare them with their semantic contracts. Return to the
-   checkpoint before adding meaningful knowledge outside the approved
-   content boundary. Keep successful verification internal; report
-   failures or deviations.
-
-6. Write the verified result.
-
-   After verification passes, write the final notes and assets to their
-   vault locations.
-
-7. Record qualifying work.
-
-   Use `log-rules.md` when the completed work meets its logging scope.
+6. **Write and log.** Write verified notes and assets to their vault
+   locations. Apply `log-rules.md` to completed changes.

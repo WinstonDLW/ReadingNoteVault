@@ -1,20 +1,17 @@
 # Linking Rules
 
-Use Obsidian links when opening the target would improve navigation or
-future review.
+Use Obsidian links when opening the target improves navigation or review.
 
-- In source notes, link concepts that carry the source's knowledge
-  contribution.
-- In concept notes, link supporting concepts when the text explains a
-  meaningful relationship.
-- In logs, link only the matching source note.
+- Source notes link concepts carrying the source's contribution.
+- Concept notes link their sources and supporting concepts where the text
+  explains a meaningful relationship, including related notes from the
+  current work.
+- Logs link only the matching source note.
 - Use plain text for ordinary terms, repeated mentions, and concepts
-  without a useful link target.
-- Link concept notes created or updated in the current work when they
-  are meaningfully related.
+  without a useful existing or planned target.
 
-Use an alias when natural wording differs from the note title:
-
-```markdown
-[[concept-slug|Concept Name]]
-```
+Use `[[concept-name|Concept Name]]` when display wording differs from the
+filename. Include a vault-relative path when needed to disambiguate.
+Link original local sources with vault-relative links, external sources
+with Markdown URLs, and embed final assets with `![[3-resource/filename]]`.
+Ensure planned targets exist by completion.
