@@ -9,9 +9,8 @@ Find the existing source note for the same source. Before proposing a new
 concept note, search existing names, aliases, and content for the same or
 closely related meaning. After the user selects content, derive proposed
 note boundaries from that selection and show them in the final plan.
-Resolve paths before edit approval; do not bundle note placement with
-keep/omit questions. Use the clearest standard concept name. Do not rename
-an existing note just to normalize it.
+Resolve paths before edit approval. Use the clearest standard concept name.
+Do not rename an existing note just to normalize it.
 
 ## Integration After Approval
 

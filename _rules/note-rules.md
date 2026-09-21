@@ -42,9 +42,11 @@ existing assets. Temporary artifacts follow `AGENTS.md`.
 A source note records the source's contribution and provides navigation.
 Identify the title and author when available, link the original file or
 URL, and record each processed scope with links to its concept notes.
-For scope centered on one concept, use one or two sentences describing
-the source's angle. Keep reusable mechanisms and explanatory examples in
-concept notes; retain only source-specific context and navigation here.
+Summarize the core knowledge introduced in each scope, usually in one or
+two sentences. State what the concept does, or use "introduces" when
+appropriate. Describe the knowledge directly, rather than saying the source
+"develops" it. Keep supporting examples in concept notes. The summary
+provides knowledge and navigation, not an account of the author's presentation.
 
 ## Concept Notes
 
@@ -64,10 +66,20 @@ lesson or walkthrough. Do not estimate or ask about the user's background
 knowledge, or add prerequisite teaching to fill assumed gaps. Use source
 references for full explanations and unretained detail.
 
-Preserve causal and prerequisite relationships while organizing for quick
-retrieval of the selected knowledge. Combine source passages that establish
-one relationship; retain essential reasoning without repeating each step
-of the source's exposition. Organize headings around knowledge.
+### Organize Before Drafting
+
+After selection, internally reduce the retained content to its central
+claim, essential relationships, and conditions. Identify what must be
+explained before another point makes sense, and which claims each example
+supports. Give each relationship one primary place in the note. Combine
+source passages that establish the same relationship.
+
+Use this structure to choose headings and representations, then draft from
+it. Follow causal and prerequisite order, not the source's paragraph sequence
+or a fixed note template. This is an internal step, not another questionnaire
+or a detailed planning document.
+
+### Explain The Knowledge
 
 Open with a direct thesis: state the distinction, problem, mechanism, or
 consequence itself. Avoid framing such as "this note explains" or "the
@@ -113,8 +125,10 @@ explanation.
 Follow the selected artifacts, final plan, and semantic contract defined
 in `question-guide.md`. A replacement visual changes the medium while
 preserving that contract. Use suitable notation and label relationships
-whose meaning could be unclear. Connect visuals to the explanation with
-the minimum introduction, caption, or follow-up needed.
+whose meaning could be unclear. Keep the essential explanation continuous;
+do not make the reader assemble a mechanism from scattered captions.
+Use captions to identify each figure's distinct contribution without
+repeating the full explanation.
 
 Render generated visuals in temporary storage before writing final vault
 files. Inspect labels and layout, and compare the result and surrounding
@@ -123,50 +137,56 @@ Follow the workflow's failure handling if rendering or verification fails.
 
 ### Compression And Style
 
-Before composing prose, reduce the agreed content to its claims, essential
-relationships, and necessary qualifications. Draft from that distilled
-content, not by rewriting each source paragraph. Remove narrative setup,
-repeated motivation, transitional explanation, and example detail that
-does not carry selected knowledge. Preserve technical meaning and causal
-links; do not compress into vague slogans or disconnected keywords.
+Remove narrative setup, repeated motivation, transitional explanation, and
+example detail that does not carry selected knowledge. Preserve technical
+meaning and causal links; do not compress into slogans or disconnected keywords.
 
-Give each claim or relationship one clearest primary expression in prose,
-an example, table, diagram, code, or another representation. Merge elements
-that answer the same review question, preserving unique detail. Keep an
-additional section or representation only when it carries distinct,
-confirmed knowledge. Do not explain the same mechanism in an introduction,
-caption, walkthrough, and concluding paragraph. A retained example should
-carry its selected teaching point with the least detail that preserves it.
+Merge elements that answer the same review question, preserving unique
+detail. Additional sections or representations must carry distinct selected
+knowledge. Avoid repeating a mechanism across an introduction, caption,
+walkthrough, and conclusion.
 
-Keep paragraphs short and sentences focused on one main relationship.
-Use complete, direct, concise, assertive declarative prose and concrete
-technical subjects. Remove unnecessary hedging, filler, and repeated
-framing. Preserve qualifiers required by scope, conditions, causality,
-or uncertainty; never turn conditional claims into universal ones. Split
-independent ideas; use parallel bullets for ideas sharing a frame.
+Prefer simple subject-verb sentences with concrete technical subjects.
+Express one main relationship per sentence. Do not reduce word count by
+packing distinct claims into subordinate clauses or semicolon chains.
+Keep each paragraph to one review point, usually one to three short
+sentences. Use parallel bullets for comparisons, conditions, or distinct
+steps; keep connected reasoning in short prose.
 
-## Final Knowledge Check
+Preserve complete statements, causal links, and necessary qualifications
+when splitting sentences. Avoid fragments, repeated setup, and extra
+explanation. Remove filler and unnecessary hedging without turning
+conditional claims into universal ones.
 
-Before writing final vault files, confirm:
+## Final Review
 
-1. **Knowledge:** Central claims, required mechanisms, accuracy-critical
-   qualifications, and existing knowledge protected by the update rules
-   are preserved.
-2. **Flow:** Structure preserves useful reasoning and follows the approved
-   changes.
-3. **Selection:** All meaningful source points were presented with their
-   roles and contributions. Every optional point has an explicit inclusion
-   decision or scoped delegation; the draft preserves the selected knowledge.
-   An unanswered inclusion question fails this check.
-4. **Fidelity:** Representations meet their semantic contracts; generated
-   visuals pass rendered inspection.
-5. **Distillation:** The note enables substantially faster review of the
-   selected knowledge. If it still follows source paragraphs or requires
-   reading through a similar explanatory journey, redraft it. Added lessons,
-   commentary, and repeated explanations are removed. Do not shorten by
-   dropping confirmed knowledge or accuracy-critical qualifications.
-6. **Readability:** Prose is complete, direct, concise, technically precise,
-   and scannable; source terminology and tone are preserved, and the concept
-   can be reviewed independently.
-7. **Navigation:** Required metadata and scope references are present;
-   note links, source routes, and asset embeds resolve to intended targets.
+Complete both passes before writing or delivering the note. Fix findings
+without waiting for the user to request another review. If a revision changes
+meaning or selection, repeat the affected source check.
+
+### Pass 1: Source And Selections
+
+- Compare the draft with the source and resolved selections from
+  `question-guide.md`. Preserve selected claims, examples, figures, necessary
+  qualifications, and existing knowledge protected by `update-rules.md`.
+  Unanswered choices block completion.
+- Check the actual assertion: does the note state the source's relationship,
+  including relevant subjects, direction, and conditions? Merely naming a
+  concept or matching keywords is insufficient. Do not add background lessons
+  to satisfy this check. Preserve the source's terminology and certainty.
+- Check representations against their semantic contracts and source figures;
+  inspect rendered generated visuals. Verify metadata, references, links,
+  and asset targets.
+
+### Pass 2: Read The Note Alone
+
+- Follow the explanation in order. Are terms and prerequisites clear before
+  use? Are examples attached to their claims? Can the mechanism be understood
+  without piecing together scattered paragraphs and captions?
+- Read each sentence for immediate understanding. Simplify overloaded clauses,
+  split dense paragraphs, and make ambiguous subjects or relationships explicit.
+- Remove repeated claims, unnecessary framing, and redundant recaps. Preserve
+  distinct selected knowledge. If review still requires following the source's
+  full explanatory journey, reorganize and distill the note.
+- Check the source summary separately: it states core knowledge and provides
+  navigation, without retelling supporting examples.

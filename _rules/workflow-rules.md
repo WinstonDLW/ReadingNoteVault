@@ -14,12 +14,10 @@ reuse it during the task unless it changes.
 - For rule reviews or edits, inspect and change the requested rules
   directly. The note-generation checkpoint and source logs do not apply.
 
-Show the source's meaningful points, their roles and contributions, and
-keep/omit choices before proposing the final note organization. Keep
-technical bookkeeping, semantic-contract details, paths, logging decisions,
-and successful verification internal unless requested. Content selection
-belongs to the user; compression and formatting follow `note-rules.md`.
-Report verification failures and deviations.
+This controller owns sequencing and authorization. `question-guide.md`
+owns content choices; `note-rules.md` owns organization, writing, and review.
+Keep analysis, technical bookkeeping, and successful verification internal
+unless requested. Report verification failures and deviations.
 
 ## Steps
 
@@ -31,35 +29,28 @@ Report verification failures and deviations.
 2. **Analyze and discover.** Use `question-guide.md` to analyze the scope.
    Use Discovery Before Approval in `update-rules.md` to find matching
    notes, and Locations And Metadata in `note-rules.md` to resolve
-   prospective paths. Apply the note-writing principles when planning.
+   prospective paths.
 
-3. **Ask and wait.** Follow `question-guide.md` to present all meaningful
-   source points and their roles, then ask which optional points to keep.
-   Include examples, supporting explanations, and source artifacts in this
-   selection checkpoint. Unanswered questions block note drafting and final
-   vault writes. Stop and wait for the user's
-   answers; continue only independent source reading or discovery. Do not
+3. **Ask and wait.** Present the grouped selection checkpoint from
+   `question-guide.md` before proposing note organization. Unanswered choices
+   block drafting and final vault writes. Stop and wait; continue only
+   independent source reading or discovery. Do not
    choose a recommended option on the user's behalf or treat silence,
    a preselected option, an empty tool response, or elapsed time as an answer.
 
-4. **Plan and authorize.** After selection, give a compact final plan showing
-   how the core knowledge and retained points will be organized into notes
-   and representations. Follow `note-rules.md` for concision; do not reopen
-   selection as questions about depth or formatting. The selections and
-   approved plan define the content changes. Authorization to write files
-   does not answer content questions. Obtain edit approval unless existing
-   authorization covers these confirmed changes. Answers accompanied by
-   "go ahead" authorize the resulting plan when they fully determine it;
-   state that plan and proceed. Otherwise present the resolved plan for
-   approval. Reuse approval of an unchanged plan. Ask again only for
-   unresolved content choices or changes outside the authorized scope.
-   Permission to use judgment settles only choices explicitly delegated
-   for this scope; by itself it does not authorize file edits.
+4. **Organize and authorize.** Apply Organize Before Drafting in
+   `note-rules.md` internally. Show only a compact plan of the resulting
+   notes and representations. If existing authorization covers these confirmed
+   changes, state the plan and proceed. Complete selections accompanied by
+   "go ahead" also authorize the resulting plan. Otherwise obtain approval.
+   Ask again only for unresolved choices or changes outside the approved scope.
+   File-edit permission does not settle content choices; delegated judgment
+   settles only the named choices and does not itself authorize file edits.
 
-5. **Draft and verify.** Apply Integration After Approval in
-   `update-rules.md`, the writing rules and Final Knowledge Check in
-   `note-rules.md`, and `linking-rules.md`. Resolve checks before writing
-   final files. If a check cannot be completed, report the limitation and
+5. **Draft and review.** Apply Integration After Approval in `update-rules.md`,
+   the writing rules in `note-rules.md`, and `linking-rules.md`. Complete both
+   Final Review passes in `note-rules.md` before writing final files or
+   delivering the note. If a check cannot be completed, report the limitation and
    leave the affected artifact and dependent changes unresolved. Do not
    claim verification passed or silently substitute another representation.
 
