@@ -65,3 +65,27 @@
   - Created: none
   - Updated: architectural boundaries, source-clean-architecture
   - Summary: Clarified boundary-crossing dependencies, asymmetric protection, and plugin replacement limits; made figure captions explain their relationships and focused the source summary on core knowledge.
+
+- 2026-09-27 | Chapter 20: Business Rules
+  - Source: [[source-clean-architecture|Clean Architecture]]
+  - Created: business rules
+  - Updated: source-clean-architecture
+  - Summary: Added Critical Business Rules and Data, Entities and application-specific use cases, their dependency direction and level distinction, independent request/response models, and both loan examples with Figures 20.1-20.2.
+
+- 2026-09-27 | Chapter 21: Screaming Architecture
+  - Source: [[source-clean-architecture|Clean Architecture]]
+  - Created: screaming architecture
+  - Updated: source-clean-architecture
+  - Summary: Added recognizable use-case structure, Jacobson's referenced use-case-driven approach, deferred delivery choices, framework evaluation, and testing use cases and Entities without infrastructure.
+
+- 2026-09-27 | Chapter 22: The Clean Architecture
+  - Source: [[source-clean-architecture|Clean Architecture]]
+  - Created: clean architecture
+  - Updated: source-clean-architecture
+  - Summary: Added the Dependency Rule, layer responsibilities and change expectations, interface adapters, interfaces owned by inner layers, simple boundary data, and the Java web scenario with Figures 22.1-22.2.
+
+- 2026-10-03 | Chapter 23: Presenters and Humble Objects
+  - Source: [[source-clean-architecture|Clean Architecture]]
+  - Created: humble object
+  - Updated: source-clean-architecture
+  - Summary: Added separation of hard-to-test behavior from testable logic, Presenter/View and View Model responsibilities, database gateways and test doubles, data mappers, and service listeners at architectural boundaries.

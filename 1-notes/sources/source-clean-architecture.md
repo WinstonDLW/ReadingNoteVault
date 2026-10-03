@@ -41,3 +41,19 @@ Defines [[software architecture|Software Architecture]] by its support for the s
 ### Chapter 17: Boundaries: Drawing Lines
 
 [[architectural boundaries|Architectural Boundaries]] separate components that change for different reasons and direct source dependencies from replaceable details toward core business rules. This plugin structure defers technical decisions and protects business rules from changes in those details.
+
+### Chapter 20: Business Rules
+
+[[business rules|Business Rules]] divide into application-independent rules in Entities and application-specific rules in use cases. Use cases depend on Entities. They receive input and return output through independent request and response models.
+
+### Chapter 21: Screaming Architecture
+
+[[screaming architecture|Screaming Architecture]] makes an application's purpose and use cases visible in its source structure. Keeping frameworks and delivery mechanisms peripheral allows technical choices to be deferred and business behavior to be tested without infrastructure.
+
+### Chapter 22: The Clean Architecture
+
+[[clean architecture|Clean Architecture]] separates policies from mechanisms and directs source dependencies inward through the Dependency Rule. Interfaces owned by inner layers and simple boundary data keep business rules independent of external tools, even when control flows outward.
+
+### Chapter 23: Presenters and Humble Objects
+
+The [[humble object|Humble Object]] pattern keeps hard-to-test behavior minimal and moves testable logic into a separate module. This separation often defines architectural boundaries, with simple data structures carrying communication across them.

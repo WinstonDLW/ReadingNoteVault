@@ -81,9 +81,10 @@ or a detailed planning document.
 
 ### Explain The Knowledge
 
-Open with a direct thesis: state the distinction, problem, mechanism, or
-consequence itself. Avoid framing such as "this note explains" or "the
-source argues" when knowledge can be stated directly. Include why it
+Open with the central knowledge: state the main distinction, relationship,
+problem, or mechanism before a general statement of its value. When the
+scope contrasts concepts, name that contrast in the opening. Avoid framing
+such as "this note explains" or "the source argues." Include why it
 matters when that consequence adds necessary knowledge. Explain the core
 relationship plainly before using notation; use notation for precision.
 Make technical subjects and relationship types and directions explicit.
@@ -128,7 +129,9 @@ preserving that contract. Use suitable notation and label relationships
 whose meaning could be unclear. Keep the essential explanation continuous;
 do not make the reader assemble a mechanism from scattered captions.
 Use captions to identify each figure's distinct contribution without
-repeating the full explanation.
+repeating the full explanation. When a retained figure already presents an
+example's steps or data, let it carry those details. Use adjacent prose to
+explain what the example demonstrates instead of narrating the figure again.
 
 Render generated visuals in temporary storage before writing final vault
 files. Inspect labels and layout, and compare the result and surrounding
@@ -149,9 +152,10 @@ walkthrough, and conclusion.
 Prefer simple subject-verb sentences with concrete technical subjects.
 Express one main relationship per sentence. Do not reduce word count by
 packing distinct claims into subordinate clauses or semicolon chains.
-Keep each paragraph to one review point, usually one to three short
-sentences. Use parallel bullets for comparisons, conditions, or distinct
-steps; keep connected reasoning in short prose.
+Keep each paragraph to one review question, usually one to three short
+sentences. Separate distinct questions, such as definition, implementation,
+and independent constraints, even if they fit into a short paragraph. Use
+parallel bullets for comparisons or steps; keep each rule with its reasoning.
 
 Preserve complete statements, causal links, and necessary qualifications
 when splitting sentences. Avoid fragments, repeated setup, and extra
@@ -180,11 +184,14 @@ meaning or selection, repeat the affected source check.
 
 ### Pass 2: Read The Note Alone
 
-- Follow the explanation in order. Are terms and prerequisites clear before
+- Check that the opening states the central knowledge. Follow the explanation
+  in order. Are terms and prerequisites clear before
   use? Are examples attached to their claims? Can the mechanism be understood
   without piecing together scattered paragraphs and captions?
-- Read each sentence for immediate understanding. Simplify overloaded clauses,
-  split dense paragraphs, and make ambiguous subjects or relationships explicit.
+- Read each sentence for immediate understanding. Simplify overloaded clauses
+  and split paragraphs answering different questions. Make the subjects and
+  scope of relationships explicit, especially when similar objects or terms
+  have different responsibilities.
 - Remove repeated claims, unnecessary framing, and redundant recaps. Preserve
   distinct selected knowledge. If review still requires following the source's
   full explanatory journey, reorganize and distill the note.
